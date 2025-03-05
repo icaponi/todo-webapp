@@ -10,7 +10,7 @@ def main():
         print("4. List tasks")
         print("5. Exit")
         
-        choice = input("\nEnter your choice (1-4): ")
+        choice = input("\nEnter your choice (1-5): ")
         
         if choice == '1':
             task = input("Enter task: ")
@@ -30,7 +30,7 @@ def main():
             try:
                     index = int(input("Enter task number to remove: "))
                     edited= input("Enter edited task: ")
-                    
+
                     app.edit_todo(index)
                 except ValueError:
                     print("Please enter a valid number!")
