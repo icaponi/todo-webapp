@@ -1,1 +1,3 @@
+import functions
+
 import tkinter

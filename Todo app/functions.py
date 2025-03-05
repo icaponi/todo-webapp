@@ -32,6 +32,16 @@ class TodoApp:
         except IndexError:
             print("Invalid task number!")
 
+    def edit_todo(self, index, task):
+        """Edit a todo by index"""
+        try:
+            
+            self.todos[index - 1]=task
+            self.save_todos()
+            
+        except IndexError:
+            print("Invalid task number!")
+
     def list_todos(self):
         """Display all todos"""
         if not self.todos:

@@ -6,8 +6,9 @@ def main():
         print("\nTODO App Menu:")
         print("1. Add task")
         print("2. Remove task")
-        print("3. List tasks")
-        print("4. Exit")
+        print("3. Edit task")
+        print("4. List tasks")
+        print("5. Exit")
         
         choice = input("\nEnter your choice (1-4): ")
         
@@ -24,10 +25,20 @@ def main():
                 except ValueError:
                     print("Please enter a valid number!")
         
-        elif choice == '3':
+        elif choice == '4':
+            app.list_todos()
+            try:
+                    index = int(input("Enter task number to remove: "))
+                    edited= input("Enter edited task: ")
+                    
+                    app.edit_todo(index)
+                except ValueError:
+                    print("Please enter a valid number!")
+
+        elif choice == '4':
             app.list_todos()
         
-        elif choice == '4':
+        elif choice == '5':
             print("Goodbye!")
             break
         
