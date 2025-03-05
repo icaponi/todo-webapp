@@ -25,15 +25,14 @@ def main():
                 except ValueError:
                     print("Please enter a valid number!")
         
-        elif choice == '4':
+        elif choice == '3':
             app.list_todos()
             try:
-                    index = int(input("Enter task number to remove: "))
-                    edited= input("Enter edited task: ")
-
-                    app.edit_todo(index)
-                except ValueError:
-                    print("Please enter a valid number!")
+                index = int(input("Enter task number to edit: "))
+                edited= input("Enter edited task: ")
+                app.edit_todo(index,edited)
+            except ValueError:
+                print("Please enter a valid number!")
 
         elif choice == '4':
             app.list_todos()
