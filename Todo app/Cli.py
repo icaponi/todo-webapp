@@ -3,6 +3,7 @@ def main():
     app = functions.TodoApp()
     
     while True:
+        app.list_todos()
         print("\nTODO App Menu:")
         print("1. Add task")
         print("2. Remove task")
