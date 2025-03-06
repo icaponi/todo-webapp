@@ -1,3 +1,3 @@
 import functions
 
-import tkinter
+import FreeSimpleGUI
